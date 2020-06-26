@@ -1,0 +1,26 @@
+{
+  "name": "library-management",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shruthi s nair",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shruthiSNair91/Assignment02_node-Express_library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shruthiSNair91/Assignment02_node-Express_library/issues"
+  },
+  "homepage": "https://github.com/shruthiSNair91/Assignment02_node-Express_library#readme",
+  "description": ""
+}

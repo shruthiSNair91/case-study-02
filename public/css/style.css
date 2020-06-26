@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-form input{
+    width:auto;
+}
+body {
+    padding-top:10px;
+    color:#646464;
+   background-color:hsla(0, 6%, 80%, 0.623);
+}
+header{
+    min-height: fit-content;
+    display: block;
+   margin-bottom: 15px;
+   width: 100%;
+   float: none;
+   position: fixed;
+}
+#heading{
+    font-size: 75px;
+    text-align: justify;
+    position: relative;
+    font-family:Garamond;
+
+}
+
+h2,h3,.highlight,.navbar a,#masthead h4 {
+    font-family:'Oswald',arial narrow,sans-serif;
+    font-weight: bold;
+}
+ul a{
+    font-size: 18px;
+}
+#btnlogin,#btnsignup{
+    font-size: 18px;
+    position: relative;
+    margin-right: 25px;
+}
+#masthead {
+    position: relative;
+     min-height:200px;
+    background-color:#010155;
+    color:#aaaacc;
+  }
+  #masthead h1{
+      font-size: 60px;
+      color:#fefeff;
+      margin-top: 10%;
+    
+  }
+  #masthead .sideblock {
+      position: relative;
+      margin-top: 5%;
+      min-height:127px;
+      background-color:#111166;
+      border-color:#000022;
+      border-radius: 5px;
+  } 
+  .top-space{
+      position: relative;
+      margin-top: 20px;
+      background-color: #ffffff;
+      min-height: 50px;
+      box-sizing: border-box;
+  }
+  .panel {
+    border-color:transparent;
+    border-radius:0;
+  }
+  
+  .panel .panel_body{
+      position: relative;
+      /* min-height:500px ; */
+      background-color: #ffffff;
+      box-sizing: border-box;
+  }
+  .carousel slide{
+      position: relative;
+  }
+  .carousel-inner{
+      position: relative;
+  }
+  img{
+      position:relative;
+      overflow: hidden;
+      border-radius: 50%;
+  }
+  p,span{
+     overflow: hidden;
+    font-size: 15px; 
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 15px;
+    color: white;
+    
+  }
+  a:hover{
+      text-decoration: none;
+      color: green;
+  }
+  #btnmore{
+      position: relative;
+      margin-left: 90%;
+      }
+  #footer{
+      margin-top: 35px;
+  }
+  footer {
+
+    margin-top:40px;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color:#cecece;
+   
+  }
+  .btn-twitter {background-color:#4099FF;color:#fff;}
+  .btn-facebook {background-color:#3B5998;color:#fff;}
+  .btn-google-plus {background-color:#d34836;color:#fff;}
+  
+  .btn-twitter:hover {background-color:#3088FF;color:#62BBFF;}
+  .btn-facebook:hover {background-color:#2A4998;color:#4C6BBA;}
+  .btn-google-plus:hover {background-color:#C23836;color:#E45A58;}
+
+  #addbook{
+     
+      margin: 30px;
+  }
+  #addbook input,label{
+      padding: 5px;
+  }
+  #addbook a,button{
+      padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 20px;
+      /* display: inline-block; */
+      /* box-shadow:3px 3px 3px 3px #4CAF50; */
+      margin: 25px;
+  }
+  #addbook a:hover{
+      color: green;
+  }
+    

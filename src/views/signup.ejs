@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/css/bootstrapv4.4.1-.min.css" >
+    <link rel="stylesheet" href="css/signUpStyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Library | SignUp</title>
+</head>
+
+<body>
+  
+    <div id="container">
+        <!-- Navbar starts here -->
+        <nav class="navbar navbar-expand-lg navbar-bright" style=" background-color:darkblue">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<%=nav[0].link%>"><%=nav[0].name%></a>
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="<%=nav[1].link%>"><%=nav[1].name%></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<%=nav[2].link%>" ><%=nav[2].name%></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<%=nav[3].link%>" ><%=nav[3].name%></a>
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="<%=nav[4].link%>" ><%=nav[4].name%></a>
+              </li>   
+            </ul>
+            <!-- <a href="logIn.html" id="btnlogin"  class="btn btn-outline-success my-2 my-sm-0" role="button" aria-pressed="true">LogIn</a>
+            <a href="signUp.html" id="btnsignup"  class="btn btn-outline-success my-2 my-sm-0" role="button" aria-pressed="true">SignUp</a> -->
+          </div>
+        </nav>
+        <!-- /navbar -->
+    
+        <!--Next Blue master header div starts -->
+      <div id="masthead">  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <p id="heading">Sign Up</p>
+            </div>    
+            <div class="col-md-5" >
+              <div class="sideblock sideblock-lg"> 
+                <div class="row">
+                  <div class="col-sm-12">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <!-- /container -->
+        <!-- top space in blue head starts -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              
+               <!-- <div class="top-space"> 
+              </div> -->
+                       
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- top space in blue head ends -->
+    </div>
+    <!-- sign Up form starts -->
+    <form action="/signin" onsubmit="return validateAll();"> 
+        <div class="container">
+          <div id="tophead">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          </div>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span id="emailErr"></span>
+          <input id="email" type="text" placeholder="Enter Email eg:yourname@xyz.xyz" onfocusout="validateEmail()">
+         
+          <label for="phone"><b>Phone</b></label>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span id="phoneErr"></span>
+          <input id="phone" type="tel" placeholder="format: xxx-xxx-xxxx or xxx.xxx.xxxx or xxx xxx xxxx"  maxlength="12" onfocusout="validatePhone()">
+                
+          <label for="pwd"><b>Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <span id="pwdErr"></span>
+          <input id="pwd" type="password" placeholder="Enter Password">
+         <span id="pwdMetMsgSpan"><progress max="100" value="0" id="pwdMeter" style="visibility: hidden; "></progress>&nbsp;&nbsp;
+          <span id="pwdStrengthMsg"></span></span><br>
+          
+          <label for="pwdConfirm"><b>Repeat Password</b></label>&nbsp;&nbsp;&nbsp;
+          <span id="pwdConfirmErr"></span>
+          <input id="pwdConfirm" type="password" placeholder="Repeat Password" name="psw-repeat" onkeyup="validateConfirmPwd()">
+               
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+      
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+          <div class="clearfix">
+            <button type="cancel" class="cancelbtn" onclick="return cancelSignup()">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+     
+    <footer>
+        <div class="container">
+          <div class="row" style="padding: 0;">
+            <div class="col col-sm-12">
+              <h1>Follow Us</h1>
+              <div class="btn-group">
+                <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+                  <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+                  <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+              </div>
+            </div><br>
+            <div class="col-sm-6">
+              <div class="list-inline"><br>
+                <span><i class="icon-facebook icon-2x"></i></span>
+                <span><i class="icon-twitter icon-2x"></i></span>
+                <span><i class="icon-google-plus icon-2x"></i></span>
+                <span><i class="icon-pinterest icon-2x"></i></span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+            </div>
+          </div>
+        </div>
+      </footer>
+          
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+       <script src="js/signUp.js"></script>
+</body>
+</html>

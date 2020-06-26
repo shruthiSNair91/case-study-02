@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log In</title>
+    <link rel="stylesheet" href="/css/bootstrapv3.2.0.min.css" >
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/loginstyle.css">
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+  <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+         <a href="/" class="navbar-brand">Home</a>
+      </div>
+     
+      <nav class="collapse navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <%for(i=0;i<nav.length;i++){%>
+              <li>
+                  <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+                
+              </li>
+              <%}%>
+          </ul>
+           <!-- <ul class="nav navbar-right navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+              <ul class="dropdown-menu" style="padding:12px;">
+                 <form class="form-inline">
+                  <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search"> 
+                </form> 
+              </ul>
+            </li> 
+          </ul> --> 
+        </nav>
+      </div>
+    
+    </header>
+        <!-- /navbar -->
+    
+        <!--Next Blue master header div starts -->
+      <div id="masthead">  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <p id="heading">Sign In</p>
+            </div>    
+            <div class="col-md-5" >
+              <div class="sideblock sideblock-lg"> 
+                <div class="row">
+                  <div class="col-sm-12">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <!-- /container -->
+        <!-- top space in blue head starts -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              
+               <!-- <div class="top-space"> 
+              </div> -->
+                       
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- top space in blue head ends -->
+    </div>
+
+    <!--Login form starts here  -->
+   
+      <form action="/" onsubmit="return validate();">
+
+        <h2>LOG IN</h2>
+        <div class="wrap-input100 validate-input" ><span id="errorUname"></span>
+            <input id="username" class="input100" type="text" placeholder="Email" required
+            oninvalid="this.setCustomValidity('Enter User Name Here')"
+            oninput="this.setCustomValidity('')" ></input>
+            <span class="focus-input100" data-placeholder="&#xf207;"></span>
+        </div>
+        <div class="wrap-input100 validate-input" data-validate="Enter password"><span id="errorPswd"></span>
+            <input id="password" class="input100" type="password" placeholder="Password"  required 
+            oninvalid="this.setCustomValidity('Enter Password Here')"
+            oninput="this.setCustomValidity('')" ></input>
+            <span class="focus-input100" data-placeholder="&#xf191;"></span>
+        </div>
+        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+        <label class="label-checkbox100" for="ckb1">Remember me</label><br><br>
+        <div class="container-login100-form-btn">
+          <button id="login" class="login100-form-btn">
+            Login
+          </button>
+          <div class="text-center">
+						<a class="txt1" href="#">
+							Forgot Password?
+						</a>
+					</div>
+        </div>
+      </form>
+    <!-- </div>  -->
+   <!--/login form  -->
+
+  </div>
+<!-- </div> -->
+<footer>
+  <div class="container">
+    <div class="row" style="padding: 0;">
+      <div class="col col-sm-12">
+        <h1>Follow Us</h1>
+        <div class="btn-group">
+          <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	        <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	        <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+        </div>
+      </div><br>
+      <div class="col-sm-6">
+        <div class="list-inline"><br>
+          <span><i class="icon-facebook icon-2x"></i></span>
+          <span><i class="icon-twitter icon-2x"></i></span>
+          <span><i class="icon-google-plus icon-2x"></i></span>
+          <span><i class="icon-pinterest icon-2x"></i></span>
+        </div>
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+    
+<script src="/js/jquery-3.5.1.slim.min.js" ></script>
+<script src="/js/popper.min.js" ></script>
+<script src="/js/bootstrap.min.js" ></script>   
+<script src="/js/signin.js"></script>
+</body>
+</html>

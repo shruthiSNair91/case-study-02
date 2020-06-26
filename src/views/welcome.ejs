@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+
+Template 2092 Shelf
+
+http://www.tooplate.com/view/2092-shelf
+
+-->
+    <title><%=title%></title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="/css/googleapis.com.css">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="/css/font-awesome_v4.7.0 .min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="/css/tooplate-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+    <body>
+        
+        <div class="container">
+            <header class="tm-site-header">
+                <h1 class="tm-site-name">LIBRARY</h1>
+                <!-- <p class="tm-site-description">Your Online Bookstore</p> -->
+                
+                <nav class="navbar navbar-expand-md tm-main-nav-container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmMainNav" aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse tm-main-nav" id="tmMainNav">
+                        <ul class="nav nav-fill tm-main-nav-ul">
+                            <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                            <%for(i=0;i<nav.length;i++){%>
+                            <li class="nav-item"><a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a></li>
+                            <%}%>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#">Authors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Add Book</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li> -->
+                        </ul>
+                    </div>
+                
+            </header>
+            
+            <div class="tm-main-content">
+                <section class="tm-margin-b-l">
+                    <header>
+                        <h2 class="tm-main-title">Some of Famous Books</h2>    
+                    </header>
+                    
+                    <!-- <p>Shelf HTML template is provided by Tooplate. Please tell your friends about it. Thank you. Images are from Unsplash website. In tincidunt metus sed justo tincidunt sollicitudin. Curabitur magna tellus, condimentum vitae consectetur id, elementum sit amet erat.</p> -->
+                    
+                    <div class="tm-gallery">
+                        <div class="row">
+                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                <a href="/books">
+                                    <div class="tm-gallery-item-overlay">
+                                        <img src="/images/apj.jpeg" style="min-width: 65px; min-height: 360px; " alt="Image" class="img-fluid tm-img-center">
+                                    </div>
+                                    
+                                    <p class="tm-figcaption">Wings Of Fire</p>
+                                </a>
+                            </figure>
+                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                <a href="/books">
+                                    <div class="tm-gallery-item-overlay">
+                                        <img src="/images/believe_in_urself.jpg" alt="Image" class="img-fluid tm-img-center">
+                                    </div>
+                                    <p class="tm-figcaption">Believe in yourself</p>
+                                </a>
+                            </figure>
+                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                <a href="/books">
+                                    <div class="tm-gallery-item-overlay">
+                                        <img src="/images/tom.jpeg" alt="Image" class="img-fluid tm-img-center">
+                                    </div>
+                                    <p class="tm-figcaption">Tom and Jerry</p>
+                                </a>
+                            </figure>
+                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                <a href="/books">
+                                    <div class="tm-gallery-item-overlay">
+                                        <img src="/images/war&peace.jpg" alt="Image" class="img-fluid tm-img-center">
+                                    </div>
+                                    <p class="tm-figcaption">War and Peace</p>
+                                </a>
+                            </figure>
+                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                <a href="/books">
+                                    <div class="tm-gallery-item-overlay">
+                                        <img src="/images/book5.jpg" alt="Image" class="img-fluid tm-img-center">
+                                    </div>
+                                    <p class="tm-figcaption">The Paying Guest</p>
+                                </a>
+                            </figure>
+                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                <a href="/books">
+                                    <div class="tm-gallery-item-overlay">
+                                        <img src="/images/book6.jpg" alt="Image" class="img-fluid tm-img-center">
+                                    </div>
+                                    <p class="tm-figcaption">A Town like Alice</p>
+                                </a>
+                            </figure>
+                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                <a href="/books">
+                                    <div class="tm-gallery-item-overlay">
+                                        <img src="/images/book7.jpg" alt="Image" class="img-fluid tm-img-center">
+                                    </div>
+                                    <p class="tm-figcaption">The Adventure of Sherlock Holmes </p>
+                                </a>
+                            </figure>
+                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                                <a href="/books">
+                                    <div class="tm-gallery-item-overlay">
+                                        <img src="/images/book8.jpg" alt="Image" class="img-fluid tm-img-center">
+                                    </div>
+                                    <p class="tm-figcaption">Anne of Green Gables</p>
+                                </a>
+                            </figure> 
+                        </div>   
+                    </div>
+                    
+                    <nav class="tm-gallery-nav">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item"><a class="nav-link active" href="#">1</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">2</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">3</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">4</a></li>                    
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="media tm-highlight tm-highlight-w-icon">
+
+                    <div class="tm-highlight-icon">
+                        <i class="fa tm-fa-6x fa-meetup"></i>    
+                    </div>                    
+
+                    <div class="media-body">
+                        <header>
+                            <h2>Need Help?</h2>
+                        </header>
+                        <p class="tm-margin-b">Librarians are available to answer your questions and help with your research. We are happy to help you, but ask for your patience, as many of us are working remotely, and this may impact our access to some Library materials and our ability to fully respond to your question at this time</p>
+                        <a href="" class="tm-white-bordered-btn">Live Chat</a>
+                    </div>                    
+                </section>
+            </div>
+
+            <footer>
+                Copyright &copy; <span class="tm-current-year">2018</span> Shelf Company 
+                
+                - Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply
+            </footer>    
+        </div>
+        
+        <!-- load JS files -->
+        <script src="/js/jquery-1.11.3.min.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+        <script src="/js/popper.min.js"></script>                <!-- Popper (https://popper.js.org/) -->
+        <script src="/js/bootstrap.min.js"></script>             <!-- Bootstrap (https://getbootstrap.com/) -->
+        <script>     
+       
+            $(document).ready(function(){
+                
+                // Update the current year in copyright
+                $('.tm-current-year').text(new Date().getFullYear());
+
+            });
+
+        </script>             
+
+</body>
+</html>
