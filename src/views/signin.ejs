@@ -85,17 +85,17 @@
 
     <!--Login form starts here  -->
    
-      <form action="/" onsubmit="return validate();">
+      <form action="/signin/valid" method="GET">
 
         <h2>LOG IN</h2>
         <div class="wrap-input100 validate-input" ><span id="errorUname"></span>
-            <input id="username" class="input100" type="text" placeholder="Email" required
+            <input id="username" name="username" class="input100" type="text" placeholder="Email" required
             oninvalid="this.setCustomValidity('Enter User Name Here')"
             oninput="this.setCustomValidity('')" ></input>
             <span class="focus-input100" data-placeholder="&#xf207;"></span>
         </div>
         <div class="wrap-input100 validate-input" data-validate="Enter password"><span id="errorPswd"></span>
-            <input id="password" class="input100" type="password" placeholder="Password"  required 
+            <input id="password" name="password" class="input100" type="password" placeholder="Password"  required 
             oninvalid="this.setCustomValidity('Enter Password Here')"
             oninput="this.setCustomValidity('')" ></input>
             <span class="focus-input100" data-placeholder="&#xf191;"></span>
@@ -103,7 +103,7 @@
         <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
         <label class="label-checkbox100" for="ckb1">Remember me</label><br><br>
         <div class="container-login100-form-btn">
-          <button id="login" class="login100-form-btn">
+          <button type="submit" id="login" class="login100-form-btn" onclick="return validate();">
             Login
           </button>
           <div class="text-center">

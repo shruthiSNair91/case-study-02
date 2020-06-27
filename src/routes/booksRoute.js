@@ -55,6 +55,46 @@ function router(nav)
                
             });
     });
+
+    bookRouter.get('/update/:id',(req,res)=>{
+
+        const id= req.params.id;
+        
+        Bookdata.findById({_id:id})
+         .then((book)=>{
+            res.render('updateBook',
+            {
+                nav,
+                title:'Library',
+                book
+            });
+         });
+        }); 
+
+        bookRouter.get('/save/:id',function(req,res){
+            
+            const id= req.params.id;
+            Bookdata.findByIdAndUpdate({_id:id}, {$set: {"title" : req.query.name, "author": req.query.genre, "genre": req.query.desc, "image": req.query.img}})
+            .then((book)=>{
+                res.render('SingleBook',
+                {
+                    nav,
+                    title:'Library',
+                    book
+                });
+            })
+
+        });
+
+        bookRouter.get('/delete/:id',function(req,res){
+            const id= req.params.id;
+            Bookdata.findByIdAndDelete({_id:id})
+            .then(()=>{
+                // 
+                res.send("File deleted..");
+                })
+           
+        });
     
     return bookRouter;
 }

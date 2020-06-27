@@ -2,6 +2,7 @@ const express = require('express');
 
 const app = new express();
 
+
 const nav=[
             {link:'/books',name:'Books'},
             {link:'/author',name:'Authors'},
@@ -29,6 +30,7 @@ app.use('/signin',signRouter);
 app.use('/signup',signupRouter);
 app.use('/admin',addbookRouter);
 app.use('/addauthor',addauthorRouter);
+
 
 app.get('/',function(req,res){
     res.render('welcome',

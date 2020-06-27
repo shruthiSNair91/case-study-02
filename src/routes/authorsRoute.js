@@ -68,9 +68,10 @@ function router(nav)
             .then(()=>{
                 // 
                 res.send("File deleted..");
-            })
+                })
+           
         });
-//             var item={
+      //             var item={
 //                         name: req.body.name,
 //                         genre: req.body.genre,
 //                         desc: req.body.desc,
